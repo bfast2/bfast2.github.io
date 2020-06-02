@@ -1,14 +1,23 @@
 ---
 title: "BFAST Open-source collaborative project"
-output: github_document
+author: "Jan Verbesselt"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  knitrBootstrap::bootstrap_document:
+    theme: "simplex"
+    highlight: Tomorrow Night Bright
+    menu: FALSE
+    theme.chooser: TRUE
+    highlight.chooser: TRUE
 ---
-
-```{r, include=FALSE, echo=TRUE}
-Sys.Date()
-```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+Update website:
+```{r, include=TRUE, echo=TRUE}
+Sys.Date()
 ```
 
 ## Introduction
@@ -16,20 +25,30 @@ knitr::opts_chunk$set(echo = TRUE)
 Here, on Github, we are currently working towards a new BFAST package for R CRAN.
 All revelant repositories are located under https://github.com/bfast2
 
+* installation from Github instructions.
+
 ## Major updates on BFAST
 
-* the BFAST package is made a lot faster by C-code implementation and R code improvements by Marius Appel
-* ...
+* the BFAST package is made a lot faster by C-code implementation and R code improvements by Marius Appel. You can know install it via our readme. See.
+* BFAST GPU code project for python - add link
+* BFAST in Google Earth Engine - add link
 
-## Downloading the current BFAST package on Github
+## BFAST package overview
 
-```{r}
-plot(1)
-```
+Overview of key functions for break detection within seasonal/trend time series within the BFAST package:
 
-## BFAST
+* bfast
+* bfastmonitor
+* bfast01
+* soon bfast0n()
+* etc.
 
-BFAST, Breaks For Additive Season and Trend, integrates the decomposition of time series into trend, season, and remainder components with methods for detecting and characterizing change within time series. BFAST & BFASTmonitor:
+BFAST, Breaks For Additive Season and Trend, integrates the decomposition of time series into trend, season, and remainder components with methods for detecting and characterizing change within time series. 
+
+
+
+
+BFAST & BFASTmonitor:
 
 BFAST iteratively estimates the time and number of abrupt changes within time series, and characterizes change by its magnitude and direction. BFAST can be used to analyze different types of time series (e.g. Landsat, MODIS) and can be applied to other disciplines dealing with seasonal or non-seasonal time series, such as hydrology, climatology, and econometrics. The algorithm can be extended to label detected changes with information on the parameters of the fitted piecewise linear models.
 
