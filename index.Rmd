@@ -1,12 +1,12 @@
 ---
 title: "BFAST Open-source collaborative project"
-author: "Jan Verbesselt"
+author: "Jan Verbesselt & team i.e. Dainius, among others"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   knitrBootstrap::bootstrap_document:
     theme: "simplex"
     highlight: Tomorrow Night Bright
-    menu: FALSE
+    menu: TRUE
     theme.chooser: TRUE
     highlight.chooser: TRUE
 ---
@@ -19,6 +19,10 @@ Update website:
 ```{r, include=TRUE, echo=TRUE}
 Sys.Date()
 ```
+
+# BFAST Open-source collaborative project on time series based break detection
+
+A unsupervised time series processing tool for detecting abnormality within (bfast) or add the end of a time series (bfastmonitor).
 
 ## Introduction
 
@@ -40,13 +44,10 @@ Overview of key functions for break detection within seasonal/trend time series 
 * bfast
 * bfastmonitor
 * bfast01
-* soon bfast0n()
+* bfast0n() a light version of bfast - more flexible, and can be applied on time series with gaps (i.e. NA's)
 * etc.
 
 BFAST, Breaks For Additive Season and Trend, integrates the decomposition of time series into trend, season, and remainder components with methods for detecting and characterizing change within time series. 
-
-
-
 
 BFAST & BFASTmonitor:
 
@@ -60,5 +61,8 @@ BFASTmonitor provides functionality for monitoring disturbances in time series m
 
 * Verbesselt, J., Zeileis, A., & Herold, M. (2013). Near real-time disturbance detection using satellite image time series, Remote Sensing of Environment. DOI: 10.1016/j.rse.2012.02.022. DownLoad Paper
 
+## BFAST information
+
+[BFAST overview presentation](https://bfast2.github.io/bfast-family-presentation.html)
 
 ## References
