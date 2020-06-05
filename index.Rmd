@@ -41,6 +41,8 @@ All revelant repositories are located under https://github.com/bfast2
 
 Overview of key functions for break detection within seasonal/trend time series within the BFAST package:
 
+[BFAST overview presentation](https://bfast2.github.io/bfast-family-presentation.html)
+
 * bfast
 * bfastmonitor
 * bfast01
